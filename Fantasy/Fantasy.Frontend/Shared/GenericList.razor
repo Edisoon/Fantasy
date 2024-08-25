@@ -4,9 +4,7 @@
 {
     @if (Loading is null)
     {
-        <div class="d-flex justify-content-start align-items-center">
-            <img src="https://cdn.pixabay.com/animation/2023/08/11/21/18/21-18-05-265_512.gif" width="150" height="150" />
-        </div>
+        <Loading/>
     }
     else
     {
@@ -17,7 +15,7 @@ else if (MyList.Count == 0)
 {
     @if (NoRecords is null)
     {
-        <p>No hay registros para mostrar...</p>
+        <p>@Localizer["NoRecords"]</p>
     }
     else
     {
