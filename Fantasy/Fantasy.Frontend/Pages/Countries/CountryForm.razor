@@ -4,7 +4,7 @@
     <DataAnnotationsValidator />
     <div class="mb-3">
         <label>@Localizer["Country"]:</label>
-        <div class="col-md-4">
+        <div class="col-md-8">
             <InputText class="form-control" @bind-Value="@Country.Name" />
             <ValidationMessage For="@(() => Country.Name)" />
         </div>
